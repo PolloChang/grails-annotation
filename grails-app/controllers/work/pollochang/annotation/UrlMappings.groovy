@@ -1,4 +1,4 @@
-package grails.annotation
+package work.pollochang.annotation
 
 class UrlMappings {
 
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "example", action: "index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
